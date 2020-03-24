@@ -1,7 +1,7 @@
 nav {
   padding: none;
-  /* width: 100%;
-  height: 50px; */
+  width: 100%;
+  height: 70px;
   background: rgba(0, 0, 0, 0.61);
 }
 .sidebar-sticky > .nav {
@@ -45,6 +45,15 @@ nav {
 
   color: #ffffff;
 }
+.sidebar .nav.sub-menu .nav-item::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  margin-top: 16px;
+  border-radius: 50%;
+  background: #8e95aa;
+}
 .sidebar .nav:not(.sub-menu) {
   margin-top: 1rem;
   margin-left: 1.3rem;
@@ -56,30 +65,7 @@ nav {
   flex-direction: column;
   margin-bottom: 60px;
 }
-h3,
-p {
-  font-size: 20px;
-  margin-bottom: 0px;
-}
 
-.card {
-  background-color: #1e1e1e;
-  width: 100%;
-  min-width: 100%;
-}
-.card-body {
-  padding: 0;
-  margin: auto;
-}
-.card-title {
-  margin-bottom: 0;
-}
-
-.cases-tot {
-  color: #ffffff;
-  padding: 0;
-  margin: 0;
-}
 #case-num {
   color: #ea8c35;
 }
@@ -90,4 +76,27 @@ p {
 
 #vict-num {
   color: #b50122;
+}
+.tot-fig {
+  font-size: 30px;
+  border: none;
+  background-color: #1e1e1e;
+}
+
+#case-tagline {
+  margin: auto;
+  color: #ffffff;
+}
+#center-num1 {
+  color: #ea8c35;
+}
+#center-num2 {
+  color: #08725f;
+}
+#center-num3 {
+  color: #b50122;
+}
+
+.centre-fig {
+  margin: 0em;
 }

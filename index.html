@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Geo-Response</title>
+  </head>
+
+  <body>
+    <nav class="navbar flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand mx-auto" href="#">COVID-19 2019-ncov</a>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-3 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav">
+              <div class="row">
+                <div class="col-md-4 cases-tot">
+                  <div class="card">
+                    <div class="card-body">
+                      <h2 id="case-num">0053</h2>
+                      <p class="card-title">Cases</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 cases-tot">
+                  <div class="card">
+                    <div class="card-body">
+                      <p id="vict-num">0053</p>
+                      <h3 class="card-title">Victims</h3>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 cases-tot">
+                  <div class="card">
+                    <div class="card-body">
+                      <p id="recov-num">0053</p>
+                      <h3 class="card-title">Recovered</h3>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                  <i class="typcn typcn-document-text menu-icon"></i>
+                  <span class="menu-title">CENTRE</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-basic">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/accordions.html">Yaoundé</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Ngoumou</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/badges.html">Sanagas</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/breadcrumbs.html">Éséka</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Akonolinga</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
+                  <i class="typcn typcn-cog-outline menu-icon"></i>
+                  <span class="menu-title">Litorale</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="ui-advanced">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dragula.html">Douala</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/clipboard.html">Édéa</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/context-menu.html">Yabassi</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/slider.html">Nkongsamba	</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+                  <i class="typcn typcn-film menu-icon"></i>
+                  <span class="menu-title">Ouest</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="form-elements">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Bafoussam</a></li>                
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/advanced_elements.html">Mbouda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/validation.html">Bafang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/wizard.html">Baham</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/wizard.html">Bandjoun</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/wizard.html">Dschang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/wizard.html">Bangangté</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/wizard.html">Foumban</a></li>
+                    
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
+                  <i class="typcn typcn-point-of-interest-outline menu-icon"></i>
+                  <span class="menu-title">Sud</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="editors">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/text_editor.html">Sangmélima</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/code_editor.html">Ebolowa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../pages/forms/code_editor.html">Ambam</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+                  <i class="typcn typcn-chart-pie-outline menu-icon"></i>
+                  <span class="menu-title">Sud-Ouest</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="charts">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/charts/chartjs.html">Limbé</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/charts/morris.html">Bangem</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/charts/flot-chart.html">Menji</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/charts/google-charts.html">Mamfé</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/charts/sparkline.html">Kumba</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/charts/c3.html">Mundemba</a></li>
+                    
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+                  <i class="typcn typcn-th-small-outline menu-icon"></i>
+                  <span class="menu-title">Nord-Ouest</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="tables">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/tables/basic-table.html">Fundong</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/tables/data-table.html">Kumbo</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/tables/js-grid.html">Nkambé</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/tables/sortable-table.html">Bamenda</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/tables/sortable-table.html">Mbengwi</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="../../pages/tables/sortable-table.html">Ndop</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/ui-features/popups.html">
+                  <i class="typcn typcn-radar-outline menu-icon"></i>
+                  <span class="menu-title">Info</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div id="map"></div>
+        </main>
+      </div>
+    </div>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+     <script src="js/script.js"></script>
+     <script src="node_modules/popper.js/dist/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
